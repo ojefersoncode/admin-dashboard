@@ -1,19 +1,8 @@
 "use client";
 
 import CountryMap from "./CountryMap";
-import { useState } from "react";
 
 export default function DemographicCard() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function toggleDropdown() {
-    setIsOpen(!isOpen);
-  }
-
-  function closeDropdown() {
-    setIsOpen(false);
-  }
-
   return (
     <div className="w-full p-4">
       <div className="w-full flex-1 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] sm:p-6">
