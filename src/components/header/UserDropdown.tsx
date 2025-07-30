@@ -22,16 +22,17 @@ function toggleDropdown(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
         onClick={toggleDropdown} 
         className="flex items-center text-gray-700 dark:text-gray-400 dropdown-toggle"
       >
-        <span className="mr-3 overflow-hidden rounded-full h-11 w-11">
+        <span className="rounded-full h-11 w-11">
           <Image
-            width={44}
-            height={44}
+            width={34}
+            height={34}
             src="/images/user/owner.jpg"
             alt="User"
+            className="rounded-full"
           />
         </span>
 
-        <span className="block mr-1 font-medium text-theme-sm">Musharof</span>
+        <span className="block font-medium text-theme-sm">Musharof</span>
 
         <svg
           className={`stroke-gray-500 dark:stroke-gray-400 transition-transform duration-200 ${
