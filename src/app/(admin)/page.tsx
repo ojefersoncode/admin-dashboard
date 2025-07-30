@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import React from "react";
-import MonthlyTarget from "@/components/ecommerce/MonthlyTarget";
-import MonthlySalesChart from "@/components/ecommerce/MonthlySalesChart";
-import RecentOrders from "@/components/ecommerce/RecentOrders";
 import DemographicCard from "@/components/ecommerce/DemographicCard";
 import NavBar from "@/components/header/Navbar";
 
 export const metadata: Metadata = {
   title:
-    "Next.js E-commerce Dashboard | TailAdmin - Next.js Dashboard Template",
-  description: "This is Next.js Home for TailAdmin Dashboard Template",
+    "Mapa demografico",
+  description: "This is Next.js",
 };
 
 export default function Ecommerce() {
@@ -19,21 +16,10 @@ export default function Ecommerce() {
         <NavBar />
       </div>
 
-
-      <div className="flex flex-wrap items-center gap-4">
-
-        <MonthlySalesChart />
-        <MonthlyTarget />
-      </div>
-
-
       <div className="col-span-12 xl:col-span-5">
         <DemographicCard />
       </div>
-
-      <div className="col-span-12 xl:col-span-7">
-        <RecentOrders />
-      </div>
+  
     </div>
   );
 }
